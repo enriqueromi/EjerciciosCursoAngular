@@ -1,0 +1,14 @@
+<ul class="list">
+
+    <cdk-virtual-scroll-viewport itemSize="420" style="height: 700px;">
+
+        <div class="groupImg" *cdkVirtualFor="let item of items ">
+
+            <img [src]="item.url" class="card-img-top" *ngIf="item">
+            <div class=" card-body ">
+                <h5 class="card-title ">{{item.nombre || 'Loading...'}}</h5>
+            </div>
+        </div>
+
+    </cdk-virtual-scroll-viewport>
+</ul>

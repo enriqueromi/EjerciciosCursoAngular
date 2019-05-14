@@ -1,0 +1,7 @@
+<h1>Buscando: <small>{{termino}}</small> </h1>
+<hr>
+<div class="alert alert-danger animated fadeIn" *ngIf="encontrado">¡ERROR! No se ha encontrado el heroe</div>
+
+<div class="card-columns">
+    <app-heroe-tarjeta [heroe]="heroe" [index]="heroe.idx" *ngFor="let heroe of heroes"></app-heroe-tarjeta>
+</div>

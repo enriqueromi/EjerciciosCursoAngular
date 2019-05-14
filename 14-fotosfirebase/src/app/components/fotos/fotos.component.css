@@ -1,0 +1,18 @@
+.groupImg {
+    height: 400px;
+    padding: 25px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+    border-color: black;
+    align-content: center;
+}
+
+img {
+    height: 80%;
+    width: 100%;
+    object-fit: contain;
+    object-position: center center;
+}
